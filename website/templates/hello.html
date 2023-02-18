@@ -1,4 +1,9 @@
-<h1>Hello {{ name }}!</h1>
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+</head>
+<div class = etusivu>
+<h1>Napu</h1>
 
 <h2> Etusivu</h2>
 <nav>
@@ -9,3 +14,16 @@
 <a href="http://127.0.0.1:8000/talous_sivu/">Talous</a> |
 <a href="http://127.0.0.1:8000/yhteydenotto_sivu/">Yhteydenotto</a> |
 </nav>
+<div class = circle-container>
+    <div class="circle-container">
+        
+        <img class="center-image" src="{% static 'logo1.png' %}">
+        <img class="circle-image" src="{% static 'logo2.png' %}">
+        <img class="circle-image" src="{% static 'logo2.png' %}">
+        <img class="circle-image" src="{% static 'logo2.png' %}">
+        <img class="circle-image" src="{% static 'logo2.png' %}">
+        <img class="circle-image" src="{% static 'logo2.png' %}">
+    </div>
+</div>
+    
+</div>

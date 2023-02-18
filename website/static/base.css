@@ -1,0 +1,68 @@
+.etusivu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    margin-top: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  .center-image {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .circle-image {
+    position: absolute;
+    transform-origin: center bottom;
+  }
+
+  
+  
+   .circle-image:nth-child(2) {
+    transform: rotate(72deg) translateY(-200px) rotate(-72deg);
+  } 
+  
+  .circle-image:nth-child(3) {
+    transform: rotate(144deg) translateY(-200px) rotate(-144deg);
+  }
+  
+  .circle-image:nth-child(4) {
+    transform: rotate(216deg) translateY(-200px) rotate(-216deg);
+  } 
+  
+  .circle-image:nth-child(5) {
+    transform: rotate(288deg) translateY(-200px) rotate(-288deg);
+  }
+  
+  .circle-image:nth-child(6) {
+    transform: rotate(360deg) translateY(-200px) rotate(-360deg);
+  } 
+  
+  .circle-item {
+    position: relative;
+  }
+  
+  .circle-item img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .circle-item-text {
+    position: absolute;
+    bottom: -20px; /* Adjust this value to change the distance between the image and text */
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
