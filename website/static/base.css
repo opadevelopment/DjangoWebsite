@@ -1,0 +1,67 @@
+.etusivu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 50px;
+    background-color: #f2f2f2;
+  }
+  .center-image {
+    position: absolute;
+   
+    z-index: 1;
+  }
+  
+  .circle-item {
+    position: absolute;
+    transform-origin: center bottom;
+  }
+  
+  .circle-item img {
+    display: block;
+    margin: 0 auto;
+    height: 80px; /* Adjust this value to change the image size */
+    width: 80px; /* Adjust this value to change the image size */
+  }
+  
+  .circle-item-text {
+    position: absolute;
+    bottom: -30px; /* Adjust this value to change the distance between the image and text */
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  .circle-item:nth-child(1) {
+    transform: rotate(0deg) translateY(-150px) rotate(0deg);
+  }
+  
+  .circle-item:nth-child(2) {
+    transform: rotate(72deg) translateY(-150px) rotate(-72deg);
+  }
+  
+  .circle-item:nth-child(3) {
+    transform: rotate(144deg) translateY(-150px) rotate(-144deg);
+  }
+  
+  .circle-item:nth-child(4) {
+    transform: rotate(216deg) translateY(-150px) rotate(-216deg);
+  }
+  
+  .circle-item:nth-child(5) {
+    transform: rotate(288deg) translateY(-150px) rotate(-288deg);
+  }
+  
+  .circle-item:nth-child(6) {
+    transform: rotate(360deg) translateY(-150px) rotate(-360deg);
+  }
