@@ -1,7 +1,11 @@
 from django.urls import path
 from . import views
+from django.contrib import admin
+from django.conf import settings
+from django.urls import path,include
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
     path('', views.hello, name='hello'),
     path('hello/<str:name>/', views.hello, name='hello'),
     path('testi_sivu/', views.testi_sivu, name='testi_sivu'),
