@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+{% extends "base.html" %}
+{% block body %}
+
+
+    
+    <head>
+        <title> Yhteydenotto </title>
+    </head>
+
+    <body>
+        
+        
+            <div class="keskita">
+            {% if submitted %}s
+                <h1 class="kiitos">Kiitos palautteesta!</h1>
+            {% else %}
+
+            <form action="" method=POST>
+                <h1 class="palauteotsikko">Palautelomake</h1>
+                {% csrf_token %}
+            <div class = "nimi-p"> 
+                <p> Nimi </p>
+                {{ forms.nimi }} </div>
+            <div class = "sp-p"></div>
+                <p> Sähköposti </p>
+                {{ form.sposti }}
+            <div class = "palaute-p">
+                <p> Palaute </p>
+                {{ form.palaute }} </div>
+                
+            <input type="submit" value="Lähetä" class="palaute_painike">
+            </form>
+            {% endif %}
+            </div>
+        
+
+</body>
+{% endblock %}
+</html>
