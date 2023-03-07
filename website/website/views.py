@@ -1,28 +1,30 @@
 from django.shortcuts import render
-from django.http  import HttpResponseRedirect
 from websiteController .forms import PalauteLomake
+from django.http  import HttpResponseRedirect
+
+
 
 
 def hello(request, name='World'):
     return render(request, 'hello.html', {'name': name})
 
-def testi_sivu(request):
-    return render(request,'testi_sivu.html')
+def testi(request):
+    return render(request,'testi.html')
 
-def opiskelija_sivu(request):
-    return render(request, 'opiskelija_sivu.html')
+def opiskelija(request):
+    return render(request, 'opiskelija.html')
 
-def muutto_sivu(request):
-    return render(request,'muutto_sivu.html')
+def muutto(request):
+    return render(request,'muutto.html')
 
-def tyoasia_sivu(request):
-    return render(request, 'tyoasia_sivu.html')
+def tyoasia(request):
+    return render(request, 'tyoasia.html')
 
-def talous_sivu(request):
-    return render(request, 'talous_sivu.html')
+def talous(request):
+    return render(request, 'talous.html')
 
-def yhteydenotto_sivu(request):
-    return render(request, 'yhteydenotto_sivu.html')
+def palaute(request):
+    return render(request, 'palaute.html')
 
 def asiakaspalaute(request):
     submitted = False
@@ -35,4 +37,4 @@ def asiakaspalaute(request):
         form = PalauteLomake
         if 'submitted' in request.GET:
             submitted = True
-    return render(request, 'yhteydenotto_sivu.html', {'form':form, 'submitted':submitted})
+    return render(request, 'palaute.html', {'form':form, 'submitted':submitted})
