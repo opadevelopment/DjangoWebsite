@@ -1,74 +1,72 @@
-{% load static %}
-<head>
-    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
-</head>
-<div class = etusivu>
-<h1>Napu</h1>
+<!DOCTYPE html>
+<html>
 
-<h2> Etusivu</h2>
-<nav>
-<a href="http://127.0.0.1:8000/testi_sivu/">Clickaa tästä testisivulle</a> |
-<a href="http://127.0.0.1:8000/opiskelija_sivu/">Opiskelija</a> |
-<a href="http://127.0.0.1:8000/muutto_sivu/">Muutto</a> |
-<a href="http://127.0.0.1:8000/tyoasia_sivu/">Työasia</a> |
-<a href="http://127.0.0.1:8000/talous_sivu/">Talous</a> |
-<a href="http://127.0.0.1:8000/yhteydenotto_sivu/">Yhteydenotto</a> |
-</nav>
-<div class="circle-container">
-    <div class="center-image">
-      <img src="{% static 'logo1.png' %}" alt="Center image description">
-      <div class="circle-item-text">
+<!-- extends toistaa base.html:ssä sijaitsevan headerin ja footerin sivulle-->
+{% extends "base.html" %}
+{% block body %}
+{% load static %}
+<body>
+  <div class = etusivu>
+  <h1>InfoKorneri</h1>
+
+  <h2> Etusivu</h2>
+
+  <div class="circle-container">
+      <div class="center-image">
+        <img src="{% static 'logo1.png' %}" alt="Center image description">
+        <div class="circle-item-text">
+        </div>
       </div>
-    </div>
-  
-    <div class="circle-item">
-      <a href="http://127.0.0.1:8000/tyoasia_sivu/">
-      <img src="{% static 'logo2.png' %}" alt="Image 1 description">
-      
-      <div class="circle-item-text">
-        <p>Työasia</p>
-      </div>
-    </a>
-    </div>
-  
-    <div class="circle-item">
-      <a href="http://127.0.0.1:8000/yhteydenotto_sivu/">
-      <img src="{% static 'logo2.png' %}" alt="Image 2 description">
-      <div class="circle-item-text">
-        <p>Yhteydenotto</p>
-      </div>
-      </a>
-    </div>
-  
-    <div class="circle-item">
-      <a href="http://127.0.0.1:8000/talous_sivu/">
-      <img src="{% static 'logo2.png' %}" alt="Image 3 description">
-      <div class="circle-item-text">
-        <p>Talous</p>
-      </div>
-      </a>
-    </div>
-  
-    <div class="circle-item">
-      <a href="http://127.0.0.1:8000/muutto_sivu/">
-      <img src="{% static 'logo2.png' %}" alt="Image 4 description">
-      
-      <div class="circle-item-text">
-        <p>Muutto</p>
-      </div>
-    </a>
-    </div>
-  
-    <div class="circle-item">
-      <a href="http://127.0.0.1:8000/opiskelija_sivu/">
-      <img src="{% static 'logo2.png' %}" alt="Image 5 description">
-      
-      <div class="circle-item-text">
-        <p>Opiskelija</p>
-      </div>
-    </a>
-    </div>
-  </div>
-  
     
-</div>
+      <div class="circle-item">
+        <a href="http://127.0.0.1:8000/tyoasia_sivu/">
+        <img src="{% static 'logo2.png' %}" alt="Image 1 description">
+        
+        <div class="circle-item-text">
+          <p>Työasia</p>
+        </div>
+      </a>
+      </div>
+    
+      <div class="circle-item">
+        <a href="http://127.0.0.1:8000/yhteydenotto_sivu/">
+        <img src="{% static 'logo2.png' %}" alt="Image 2 description">
+        <div class="circle-item-text">
+          <p>Yhteydenotto</p>
+        </div>
+        </a>
+      </div>
+    
+      <div class="circle-item">
+        <a href="http://127.0.0.1:8000/talous_sivu/">
+        <img src="{% static 'logo2.png' %}" alt="Image 3 description">
+        <div class="circle-item-text">
+          <p>Talous</p>
+        </div>
+        </a>
+      </div>
+    
+      <div class="circle-item">
+        <a href="http://127.0.0.1:8000/muutto_sivu/">
+        <img src="{% static 'logo2.png' %}" alt="Image 4 description">
+        
+        <div class="circle-item-text">
+          <p>Muutto</p>
+        </div>
+      </a>
+      </div>
+    
+      <div class="circle-item">
+        <a href="http://127.0.0.1:8000/opiskelija_sivu/">
+        <img src="{% static 'logo2.png' %}" alt="Image 5 description">
+        
+        <div class="circle-item-text">
+          <p>Opiskelija</p>
+        </div>
+      </a>
+      </div>
+    </div>   
+  </div>
+</body>
+{% endblock %}
+</html>
