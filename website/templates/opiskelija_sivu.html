@@ -42,7 +42,7 @@
         }
 
         .info-row .text-row {
-            background-image: url("{% static 'background.png' %}");
+           
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
@@ -55,42 +55,82 @@
             max-width: 100%;
             height: auto;
         }
-    </style>
-</head>
-<body>
-	<div class="container">
-		<div class="column">
-			<div class="text-row">
-				<div class="row">
-					<img src="{% static 'logo1.png' %}" class="responsive-image">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod nisi vel sapien faucibus, nec bibendum orci finibus.</p>
-					<img src="{% static 'logo2.png' %}" class="responsive-image">
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="column">
-			<div class="text-row">
-				<div class="row">
-					<img src="{% static 'logo1.png' %}" class="responsive-image">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod nisi vel sapien faucibus, nec bibendum orci finibus.</p>
-					<img src="{% static 'logo2.png' %}" class="responsive-image">
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="column">
-			<div class="text-row">
-				<div class="row">
-					<img src="{% static 'logo1.png' %}" class="responsive-image">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod nisi vel sapien faucibus, nec bibendum orci finibus.</p>
-					<img src="{% static 'logo2.png' %}" class="responsive-image">
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
 
+        /* New styles added for header */
+        .info-row h1 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .info-row .text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    
+</head>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'warningflexbox.css' %}">
+    
+  </head>
+  <body>
+    <div class="warningrow">
+        <div class="column">
+            <div class="warningrow">
+                <h1>Huom!</h1>
+                <div class="row">
+                    <div class="first-text-container">
+                        <p style="font-size: 100px;">!</p>
+                    </div>
+                    <div class="text-container">
+                        <p style="font-size: 20px;"> Kirjaudu www.kela.fi pankkitunnuksilla 
+    
+                            (Oikea yläkulma ”Asioi verkossa”  ”Kirjaudu OmaKelaan”) </p>
+                    </div>
+                    <img src="{% static 'logo2.png' %}" class="responsive-image">
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>Header Text Goes Here</h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">1</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 20px;"> Kirjaudu www.kela.fi pankkitunnuksilla 
+
+                        (Oikea yläkulma ”Asioi verkossa”  ”Kirjaudu OmaKelaan”) </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>Header Text Goes Here</h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">2</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 20px;"> Kirjaudu www.kela.fi pankkitunnuksilla 
+
+                        (Oikea yläkulma ”Asioi verkossa”  ”Kirjaudu OmaKelaan”) </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </html>
