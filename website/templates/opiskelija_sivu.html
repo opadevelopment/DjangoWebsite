@@ -15,12 +15,13 @@
             align-items: stretch;
             margin: 0 auto;
             max-width: 800px;
+            
         }
 
         .info-row .column {
             flex: 1;
             padding: 20px;
-            border: 1px solid #ccc;
+            
             margin: 10px;
             text-align: center;
         }
@@ -73,39 +74,42 @@
 </head>
 <head>
     <link rel="stylesheet" type="text/css" href="{% static 'warningflexbox.css' %}">
-    
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
   </head>
-  <body>
-    <div class="warningrow">
-        <div class="column">
-            <div class="warningrow">
-                <h1>Huom!</h1>
-                <div class="row">
-                    <div class="first-text-container">
-                        <p style="font-size: 100px;">!</p>
-                    </div>
-                    <div class="text-container">
-                        <p style="font-size: 20px;"> Kirjaudu www.kela.fi pankkitunnuksilla 
-    
-                            (Oikea yläkulma ”Asioi verkossa”  ”Kirjaudu OmaKelaan”) </p>
-                    </div>
-                    <img src="{% static 'logo2.png' %}" class="responsive-image">
+
+
+  <div class="warningrow">
+    <div class="column" style="background: url('/static/background.png')no-repeat center center fixed">
+        <div class="warningrow" >
+            <h1>Huom!</h1>
+            <div class="row">
+                <div class="first-text-container">
+                    
+                    <p style="font-size: 100px;">!</p>
                 </div>
+                <div class="text-container">
+                    <p style="font-size: 30px;">    KERÄÄ TIEDOT 
+
+                        ! Tarvitset: pankkitunnukset, vuokrasopimus (liitteeksi hakemukseen), tilinumero, pankin BIC-	koodi, asumismenot (vuokra, vesimaksu, lämmityskustannukset), tiedot kaikista tuloista 
+        
+        KUN KYSEESSÄ OPINTOTUKI:  </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
             </div>
         </div>
     </div>
-  </body>
+</div>
 
 <div class="container">
     <div class="column">
         <div class="text-row">
-            <h1>Header Text Goes Here</h1>
+            <h1>OMAKELA</h1>
             <div class="row">
                 <div class="first-text-container">
                     <p style="font-size: 100px;">1</p>
                 </div>
                 <div class="text-container">
-                    <p style="font-size: 20px;"> Kirjaudu www.kela.fi pankkitunnuksilla 
+                    <p style="font-size: 30px;"> Kirjaudu www.kela.fi pankkitunnuksilla 
 
                         (Oikea yläkulma ”Asioi verkossa”  ”Kirjaudu OmaKelaan”) </p>
                 </div>
@@ -117,20 +121,103 @@
 <div class="container">
     <div class="column">
         <div class="text-row">
-            <h1>Header Text Goes Here</h1>
+            <h1>VALITSE</h1>
             <div class="row">
                 <div class="first-text-container">
                     <p style="font-size: 100px;">2</p>
                 </div>
                 <div class="text-container">
-                    <p style="font-size: 20px;"> Kirjaudu www.kela.fi pankkitunnuksilla 
-
-                        (Oikea yläkulma ”Asioi verkossa”  ”Kirjaudu OmaKelaan”) </p>
+                    <p style="font-size: 30px;"> Valitse vasemmasta reunasta ”Tee hakemus”  </p>
                 </div>
                 <img src="{% static 'logo2.png' %}" class="responsive-image">
             </div>
         </div>
     </div>
 </div>
-<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>HAKEMUS</h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">3</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 30px;">Valitse Opiskelu Opintotuki TAI Yleinen asumistuki </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>TÄYTÄ TIEDOT </h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">4</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 30px;">Täytä tiedot lomakkeeseen ja lisää tarvittavat liitteet 
+
+                        (asumistuessa vuokrasopimus, esim.kuvatiedostona) </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>TARKISTA </h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">5</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 30px;">Tarkista lomakkeen tiedot </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>LÄHETÄ </h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">6</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 30px;">Paina lähetä </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>PÄÄTÖS </h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">7</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 30px;">Päätös tulee OmaKelaan sekä postitse 
+
+                        (Ajankohtaisen käsittelyajan voi katsoa: https://www.kela.fi/kasittelyajat) </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </html>
