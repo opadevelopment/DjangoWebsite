@@ -1,14 +1,173 @@
 <!DOCTYPE html>
 {% extends "base.html" %}
 {% block body %}
-<html>
-<head>
-    <title> Testi sivu</title>
-</head>
-<body>
-    <h1>Tämä on testisivu</h1>
+{% load static %}
 
+<html>
+<body class="info-row">
+    <!-- Otiskko -->
+    <h1>Testisivu</h1>
 
 </body>
+<head>
+    <title>info-row</title>
+    
+</head>
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'warningflexbox.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+  </head>
+
+<!-- Huomio laatikko alkaa -->
+<div class="warningrow">
+    <div class="column" style="background-color: #ffff00;">
+        <div class="warningrow" >
+            <h1>Huom!</h1>
+            <div class="row">
+                <div class="first-text-container">
+                    
+                    <p style="font-size: 100px;">!</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 30px;">    KERÄÄ TIEDOT 
+
+                        ! Tarvitset: pankkitunnukset, vuokrasopimus (liitteeksi hakemukseen), tilinumero, pankin BIC-	koodi, asumismenot (vuokra, vesimaksu, lämmityskustannukset), tiedot kaikista tuloista 
+        
+        KUN KYSEESSÄ OPINTOTUKI:  </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Huomio laatikko loppuu -->
+<!-- Ensimmäinen lohko alkaa -->
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <!-- Lohkon otsikko -->
+            <h1>OMAKELA</h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <!-- Lohkon numero 1 kuva -->
+                    <img src="{% static 'yksi.png' %}" class="responsive-image">
+                </div>
+                <div class="text-container">
+                    <!-- Lohkon varsinainen teksi alkaa -->
+                    <p style="font-size: 30px;"> Kirjaudu www.kela.fi pankkitunnuksilla 
+
+                        (Oikea yläkulma ”Asioi verkossa”  ”Kirjaudu OmaKelaan”) </p>
+                </div>
+                <!-- Teksti päättyy -->
+                <!-- Lohkon toinen kuva -->
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Lohko päättyy -->
+<!-- Lohko 2 alkaa -->
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>VALITSE</h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">2</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 30px;"> Valitse vasemmasta reunasta ”Tee hakemus”  </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>HAKEMUS</h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">3</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 30px;">Valitse Opiskelu Opintotuki TAI Yleinen asumistuki </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Lohko 2 päättyy -->
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>TÄYTÄ TIEDOT </h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">4</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 30px;">Täytä tiedot lomakkeeseen ja lisää tarvittavat liitteet 
+
+                        (asumistuessa vuokrasopimus, esim.kuvatiedostona) </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>TARKISTA </h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">5</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 30px;">Tarkista lomakkeen tiedot </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>LÄHETÄ </h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">6</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 30px;">Paina lähetä </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>PÄÄTÖS </h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">7</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 30px;">Päätös tulee OmaKelaan sekä postitse 
+
+                        (Ajankohtaisen käsittelyajan voi katsoa: https://www.kela.fi/kasittelyajat) </p>
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
 </html>
