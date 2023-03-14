@@ -17,7 +17,22 @@
             max-width: 800px;
             
         }
+        /* apply different styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item {
+    width: 100%;
+  }
+}
 
+/* apply different styles for larger screens */
+@media screen and (min-width: 1200px) {
+  .flex-item {
+    flex-basis: 33.33%;
+  }
+}
         .info-row .column {
             flex: 1;
             padding: 20px;
