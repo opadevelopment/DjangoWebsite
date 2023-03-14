@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+{% extends "base.html" %}
 {% load static %}
+{% block body %}
 <html>
 <body class="info-row">
     <h1>Opiskelijasivu</h1>
     <a href="http://127.0.0.1:8000/">Clickaa tästä etusivulle</a>
 </body>
+
 <head>
     <title>info-row</title>
     <style>
@@ -71,15 +74,13 @@
     </style>
     
 </head>
-<head>
-    <link rel="stylesheet" type="text/css" href="{% static 'warningflexbox.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-  </head>
 
 
-  <div class="warningrow">
+
+  <div class="container">
     <div class="column" style="background-color: #ffff00;">
-        <div class="warningrow" >
+        <div class="text-row" >
             <h1>Huom!</h1>
             <div class="row">
                 <div class="first-text-container">
@@ -87,18 +88,15 @@
                     <p style="font-size: 100px;">!</p>
                 </div>
                 <div class="text-container">
-                    <p style="font-size: 30px;">    KERÄÄ TIEDOT 
-
-                        ! Tarvitset: pankkitunnukset, vuokrasopimus (liitteeksi hakemukseen), tilinumero, pankin BIC-	koodi, asumismenot (vuokra, vesimaksu, lämmityskustannukset), tiedot kaikista tuloista 
-        
-        KUN KYSEESSÄ OPINTOTUKI:  </p>
+                    <p style="font-size: 20px;">    KERÄÄ TIEDOT 
+                        ! Tarvitset: pankkitunnukset, vuokrasopimus (liitteeksi hakemukseen), tilinumero, pankin BIC-	koodi, asumismenot (vuokra, vesimaksu, lämmityskustannukset), tiedot kaikista tuloista </p>
                 </div>
                 <img src="{% static 'logo2.png' %}" class="responsive-image">
             </div>
         </div>
     </div>
 </div>
-
+<h1>Kun kyseessä on Opintotuki</h1>
 <div class="container">
     <div class="column">
         <div class="text-row">
@@ -108,9 +106,17 @@
                     <p style="font-size: 100px;">1</p>
                 </div>
                 <div class="text-container">
-                    <p style="font-size: 30px;"> Kirjaudu www.kela.fi pankkitunnuksilla 
-
-                        (Oikea yläkulma ”Asioi verkossa”  ”Kirjaudu OmaKelaan”) </p>
+                         <p style="font-size: 20px;"> Kirjaudu www.kela.fi
+                        </p>
+                        <p style="font-size: 20px;">  pankkitunnuksilla: 
+                        </p>
+                        <p style="font-size: 20px;">  -> Oikea yläkulma
+                        </p>
+                        <p style="font-size: 20px;">  -> ”Asioi verkossa”  
+                        </p>
+                        <p style="font-size: 20px;">  -> ”Kirjaudu OmaKelaan”   
+                        </p>
+                        
                 </div>
                 <img src="{% static 'logo2.png' %}" class="responsive-image">
             </div>
@@ -218,5 +224,5 @@
     </div>
 </div>
 
-
+{% endblock %}
 </html>
