@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-{% extends "base.html" %}
-{% block body %}
 {% load static %}
 <html>
 <body class="info-row">
-    
+    <h1>Opiskelijasivu</h1>
+    <a href="http://127.0.0.1:8000/">Clickaa tästä etusivulle</a>
 </body>
 <head>
     <title>info-row</title>
@@ -18,22 +17,6 @@
             max-width: 800px;
             
         }
-        /* apply different styles for smaller screens */
-@media screen and (max-width: 768px) {
-  .flex-container {
-    flex-direction: column;
-  }
-  .flex-item {
-    width: 100%;
-  }
-}
-
-/* apply different styles for larger screens */
-@media screen and (min-width: 1200px) {
-  .flex-item {
-    flex-basis: 33.33%;
-  }
-}
         .info-row .column {
             flex: 1;
             padding: 20px;
@@ -235,5 +218,5 @@
     </div>
 </div>
 
-{% endblock %}
+
 </html>
