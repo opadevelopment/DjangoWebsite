@@ -4,14 +4,14 @@
     justify-content: center;
     align-items: stretch;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 100px;
 }
 
 .warningrow .column {
     flex: 1;
-    padding: 20px;
+    padding: 10vw;
     /* border: 1px solid #ccc; */
-    margin: 10px;
+    margin: 10vw;
     text-align: center;
 }
 .warningrow .row {
@@ -27,8 +27,8 @@
 }
 
 .warningrow .row p {
-    margin: 0 10px;
-    font-size: 20px;
+    margin: 0 10vw;
+    font-size: 20vw;
     
 }
 /* apply different styles for smaller screens */
@@ -66,9 +66,9 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    padding: 20px;
+    padding: 20vw;
     text-align: center;
-    margin: 10px;
+    margin: 10vw;
 }
 
 .warningrow .text-row img {
