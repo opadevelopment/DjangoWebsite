@@ -4,26 +4,33 @@
 {% block body %}
 <html>
 <body class="info-row">
-    <h1>Opiskelijalle</h1>
+    <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Infokorneri</h1>
 
 </body>
 
 <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 
+<div class="button-container">
+    <button class="button">Yleinen asumistuki</button>
+    <button class="button">Opintotuki</button>
+    <button class="button">Etusivu</button>
+  </div>
+
+<div style="margin: 2vw;"></div>
 
 
   <div class="container">
     <div class="column">
         <div class="text-row">
-            <h1>Huom!</h1>
-            <div class="row" style="background-color: #ffff00;">
+            <h1>KERÄÄ TIEDOT!</h1>
+            <div class="row">
                 <div class="first-text-container">
                     
                     <p style="font-size: 100px;">!</p>
                 </div>
                 <div class="text-container">
-                    <p style="font-size: 20px;">    KERÄÄ TIEDOT 
-                        ! Tarvitset: pankkitunnukset, vuokrasopimus (liitteeksi hakemukseen), tilinumero, pankin BIC-	koodi, asumismenot (vuokra, vesimaksu, lämmityskustannukset), tiedot kaikista tuloista </p>
+                    <p style="font-size: 20px;">   
+                        Tarvitset: pankkitunnukset, vuokrasopimus (liitteeksi hakemukseen), tilinumero, pankin BIC-	koodi, asumismenot (vuokra, vesimaksu, lämmityskustannukset), tiedot kaikista tuloista </p>
                 </div>
             </div>
         </div>

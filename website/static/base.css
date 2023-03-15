@@ -196,11 +196,6 @@
 }
 
 /* New styles added for header */
-.info-row h1 {
-  text-align: center;
-  margin-top: 0;
-}
-
 .info-row .text-container {
   display: flex;
   flex-direction: column;
@@ -208,7 +203,35 @@
   align-items: center;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
+  height: 10vh;
+  width: 20vw;
 }
 .info-row .first-text-container{
   font-family: "Montserrat", sans-serif;
+}
+.info-row h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+
+/* buttons */
+.button-container {
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  margin: 1vw;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border: none;
+  background-color: #ffff00;
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  
 }
