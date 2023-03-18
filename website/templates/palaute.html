@@ -2,6 +2,7 @@
 <html>
 {% extends "base.html" %}
 {% block body %}
+{% load static %}
 
 
     
@@ -13,7 +14,10 @@
         
         
             <div class="keskita">
-            {% if submitted %}s
+                <img src="{% static 'kesken.png' %}"
+                width="500"
+                height="600" />
+            <!-- {% if submitted %}s
                 <h1 class="kiitos">Kiitos palautteesta!</h1>
             {% else %}
 
@@ -32,7 +36,7 @@
                 
             <input type="submit" value="Lähetä" class="palaute_painike">
             </form>
-            {% endif %}
+            {% endif %} -->
             </div>
         
 

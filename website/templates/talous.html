@@ -1,13 +1,82 @@
 <!DOCTYPE html>
 {% extends "base.html" %}
 {% block body %}
+{% load static %}
 
 <html>
 <head>
     <title> Talous sivu</title>
 </head>
-<body>
-    <h1>Tämä on talous-sivu</h1>
+<body class="info-row">
+    <h1>Tämä on taloussivu</h1>
+    <div class="container">
+        <img src="{% static 'kesken.png' %}"
+        width="500"
+        height="600" />
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+
+
+  <!-- <div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>Huom!</h1>
+            <div class="row" style="background-color: #ffff00;">
+                <div class="first-text-container">
+                    
+                    <p style="font-size: 100px;">!</p>
+                </div>
+                <div class="text-container">
+                    <p style="font-size: 20px;">    KERÄÄ TIEDOT 
+                        ! Tarvitset: pankkitunnukset, vuokrasopimus (liitteeksi hakemukseen), tilinumero, pankin BIC-	koodi, asumismenot (vuokra, vesimaksu, lämmityskustannukset), tiedot kaikista tuloista </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<h1>Kun kyseessä on Opintotuki</h1>
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>OMAKELA</h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">1</p>
+                </div>
+                <div class="text-container">
+                        <p>Kirjaudu www.kela.fi</p>
+                        <p>pankkitunnuksilla:</p>
+                        <p>-> Oikea yläkulma</p>
+                        <p>-> ”Asioi verkossa”</p>
+                        <p>-> ”Kirjaudu OmaKelaan”</p>
+                        
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="column">
+        <div class="text-row">
+            <h1>VALITSE</h1>
+            <div class="row">
+                <div class="first-text-container">
+                    <p style="font-size: 100px;">2</p>
+                </div>
+                <div class="text-container">
+                        <p>Valitse vasemmasta reunasta </p>
+                        <p>”Tee hakemus”</p>
+                        
+                </div>
+                <img src="{% static 'logo2.png' %}" class="responsive-image">
+            </div>
+        </div>
+    </div>
+</div> -->
+    
+        
+    </div>
 
 </body>
 {% endblock %}
