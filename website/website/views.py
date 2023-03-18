@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from websiteController .forms import PalauteLomake
+from django.shortcuts import render,redirect
+from websiteController .forms import Palautelomake
 from django.http  import HttpResponseRedirect
 
 
@@ -23,18 +23,16 @@ def tyoasia(request):
 def talous(request):
     return render(request, 'talous.html')
 
-def palaute(request):
-    return render(request, 'palaute.html')
+def success(request):
+    return render(request,'success.html')
 
-def asiakaspalaute(request):
-    submitted = False
-    if request.method == 'POST':
-        form = PalauteLomake(request.POST)
+def palautelomake(request):
+    if request.method == "POST":
+        form = Palautelomake(request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect('/palautelomake?submitted=True')
+            return redirect('success')
+
     else:
-        form = PalauteLomake
-        if 'submitted' in request.GET:
-            submitted = True
-    return render(request, 'palaute.html', {'form':form, 'submitted':submitted})
+        form = Palautelomake()
+    return render(request, 'palaute.html', {'form': form})
