@@ -17,151 +17,67 @@
   </div>
 
 <div style="margin: 2vw;"></div>
+<div class="otsikko">
+    <h1>Yleinen asumistuki</h1>
+  </div>
 
-
+  
   <div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>KERÄÄ TIEDOT!</h1>
-            <div class="row">
-                <div class="first-text-container">
-                    
-                    <p style="font-size: 100px;">!</p>
-                </div>
-                <div class="text-container">
-                    <p style="font-size: 20px;">   
-                        Tarvitset: pankkitunnukset, vuokrasopimus (liitteeksi hakemukseen), tilinumero, pankin BIC-	koodi, asumismenot (vuokra, vesimaksu, lämmityskustannukset), tiedot kaikista tuloista </p>
-                </div>
-            </div>
-        </div>
+    <div class="box step-box">
+      <div class="step">!</div>
+      <div class="content">
+        <div class="header">KERÄÄ TIEDOT</div>
+        <div class="text">Tarvitset: pankkitunnukset, tilinumero, pankin BIC-koodi, 
+
+            vuokrasopimus (liitteeksi hakemukseen),  
+  
+            asumismenot (vuokra, vesimaksu, lämmityskustannukset),  
+  
+            tiedot kaikista tuloista  </div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'paperipino.png' %}" alt="Example Image">
+      </div>
     </div>
-</div>
-<h1>Kun kyseessä on Opintotuki</h1>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>OMAKELA</h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">1</p>
-                </div>
-                <div class="text-container">
-                        <p>Kirjaudu www.kela.fi</p>
-                        <p>pankkitunnuksilla:</p>
-                        <p>-> Oikea yläkulma</p>
-                        <p>-> ”Asioi verkossa”</p>
-                        <p>-> ”Kirjaudu OmaKelaan”</p>
-                        
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">1</div>
+      <div class="content">
+        <div class="header">VALITSE</div>
+        <div class="text">
+            kirjaudu www.kela.fi pankkitunnuksilla:
+            
+            
         </div>
-    </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>VALITSE</h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">2</p>
-                </div>
-                <div class="text-container">
-                        <p>Valitse vasemmasta reunasta </p>
-                        <p>”Tee hakemus”</p>
-                        
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
+        <div class="text">
+            > Oikea yläkulma > Asioi verkossa
+            
         </div>
-    </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>HAKEMUS</h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">3</p>
-                </div>
-                <div class="text-container">
-                        <p>Valitse Opiskelu</p>
-                        <p>”Opintotuki”</p>
-                        
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
+        <div class="text">
+            > kirjaudu OmaKelaan
+            
         </div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'www.png' %}" alt="Example Image">
+      </div>
     </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>TÄYTÄ TIEDOT</h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">4</p>
-                </div>
-                <div class="text-container">
-                        <p>Täytä tiedot lomakkeeseen</p>
-                        
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">2</div>
+      <div class="content">
+        <div class="header">HAKEMUS</div>
+        <div class="text">Valitse Opiskelu  </div>
+        <div class="text"> ”Yleinen asumistuki” </div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'allekirjoita.png' %}" alt="Example Image">
+      </div>
     </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>TARKISTA</h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">5</p>
-                </div>
-                <div class="text-container">
-                        <p>Tarkista lomakkeen tiedot</p>
-                        
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>LÄHETÄ</h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">6</p>
-                </div>
-                <div class="text-container">
-                    <p>Paina lähetä</p>
-                        
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>PÄÄTÖS</h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">7</p>
-                </div>
-                <div class="text-container">
-                        <p>Päätös tulee OmaKelaan</p>
-                        <p>sekä postitse</p>
-                        
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
-    </div>
-</div>
+  </div>
+
+  
 {% endblock %}
 </html>

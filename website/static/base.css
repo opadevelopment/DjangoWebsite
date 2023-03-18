@@ -149,69 +149,89 @@
   font-family: "Montserrat", sans-serif;
   color: white;
 }
+
+
 /* opiskelija sivu*/
-.info-row .container {
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   margin: 0 auto;
   max-width: 800px;
-  
-}
-.info-row .column {
-  
-  text-align: center;
 }
 
-.info-row .row {
+.box {
   display: flex;
   flex-direction: row;
-  align-items:center;
-  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
 }
 
-.info-row .row img {
-  max-width: 100%;
-  height: auto;
-}
-
-.info-row .row p {
-  margin: 0 10px;
-}
-.info-row .text-row {
- 
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  padding: 20px;
-  text-align: center;
-  margin: 10px;
-}
-
-.info-row .text-row img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* New styles added for header */
-.info-row .text-container {
+.step {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  height: 10vh;
-  width: 20vw;
-}
-.info-row .first-text-container{
-  font-family: "Montserrat", sans-serif;
-}
-.info-row h1 {
+  font-size: 100px;
+  font-weight: bold;
+  width: 80px;
+  height: 80px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
   text-align: center;
-  margin-top: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.header {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text {
+  flex: 1;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 500px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.image-wrapper {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.image {
+  max-width: 150%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    margin-left: 40px;
+    padding: 40px;
+  }
+  
+  .image-wrapper {
+    width: auto;
+    margin-right: 40px;
+  }
 }
 
 
@@ -234,4 +254,25 @@
   cursor: pointer;
   text-align: center;
   
+}
+/*otsikko*/
+
+.otsikko {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.otsikko h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0.5em;
+  background-color: yellow;
+  width: 450px;
+  height: 50px;
 }
