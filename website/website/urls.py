@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views
+from .import views
 from django.contrib import admin
 from django.conf import settings
 from django.urls import path,include
@@ -13,7 +13,8 @@ urlpatterns = [
     path('muutto/',views.muutto, name='muutto'),
     path('tyoasia/',views.tyoasia, name='tyoasia'),
     path('talous/',views.talous, name='talous'),
-    path('palaute/', views.palaute, name='palaute'),
+    path('palaute/', views.palautelomake, name='palaute'),
+    path('success/',views.success, name='success'),
 
 
 ]
