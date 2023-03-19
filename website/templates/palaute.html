@@ -4,42 +4,34 @@
 {% block body %}
 {% load static %}
 
-
-    
-    <head>
-        <title> Yhteydenotto </title>
-    </head>
-
-    <body>
-        
-        
-            <div class="keskita">
-                <img src="{% static 'kesken.png' %}"
-                width="500"
-                height="600" />
-            <!-- {% if submitted %}s
-                <h1 class="kiitos">Kiitos palautteesta!</h1>
+<head>
+    <title> Yhteydenotto </title>
+</head>
+<body>
+    <div class="keskita">
+        <form method="post">
+            {% if submitted %}
+            <h1 class="kiitos">Kiitos palautteesta!</h1>
             {% else %}
-
-            <form action="" method=POST>
+            <form method="post">
                 <h1 class="palauteotsikko">Palautelomake</h1>
                 {% csrf_token %}
-            <div class = "nimi-p"> 
-                <p> Nimi </p>
-                {{ forms.nimi }} </div>
-            <div class = "sp-p"></div>
+                <div class="nimi-p">
+                    <p> Nimi </p>
+                    {{ form.nimi }}
+                </div>
+                <div class="sp-p"></div>
                 <p> Sähköposti </p>
                 {{ form.sposti }}
-            <div class = "palaute-p">
-                <p> Palaute </p>
-                {{ form.palaute }} </div>
-                
-            <input type="submit" value="Lähetä" class="palaute_painike">
+                <div class="palaute-p">
+                    <p> Palaute </p>
+                    {{ form.palaute }}
+                </div>
+                <input type="submit" value="Lähetä" class="palaute_painike">
             </form>
-            {% endif %} -->
-            </div>
-        
-
+            {% endif %}
+    </div>
 </body>
 {% endblock %}
+
 </html>
