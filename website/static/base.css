@@ -5,8 +5,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 100vh;
+    margin: auto;
   }
+  .menu{
+    margin: auto;
+  }
+  .navigointi {
+    margin: auto;
+  }
+
+
 
 
 
