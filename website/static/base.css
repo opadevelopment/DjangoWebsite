@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
   }
 
 
@@ -23,6 +23,7 @@
   }
   .center-image {
     position: absolute;
+    
    
     z-index: 1;
   }
@@ -42,10 +43,12 @@
   
   .circle-item-text {
     font-family:Arial, Helvetica, sans-serif;
+    font-size: xx-large;
     position: absolute;
-    bottom: -10px; /*Adjust this value to change the distance between the image and text*/
-    left: 0;
-    right: 0;
+    /* bottom: -10px; Adjust this value to change the distance between the image and text */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
   }
   
@@ -292,4 +295,64 @@
   background-color: #fff24b;
   width: 450px;
   height: 50px;
+}
+.info-row .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+  max-width: 800px;
+  
+}
+.info-row .column {
+  flex: 1;
+  padding: 0px;
+  
+  margin: 10px;
+  text-align: center;
+}
+
+.info-row .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-row .row img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-row .row p {
+  margin: 0 10px;
+}
+
+.info-row .text-row {
+ 
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+.info-row .text-row img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* New styles added for header */
+.info-row h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.info-row .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
