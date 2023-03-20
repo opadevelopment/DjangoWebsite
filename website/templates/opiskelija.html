@@ -55,18 +55,11 @@
       <div class="content">
         <div class="header">OMAKELA</div>
         <div class="text">
-            kirjaudu www.kela.fi pankkitunnuksilla:
-            
-            
-        </div>
-        <div class="text">
-            > Oikea yläkulma > Asioi verkossa
-            
-        </div>
-        <div class="text">
-            > kirjaudu OmaKelaan
-            
-        </div>
+          Kirjaudu www.kela.fi</div>
+        <div class="text"> pankkitunnuksilla: </div>
+        <div class="text">-> Oikea yläkulma </div>
+        <div class="text">-> ”Asioi verkossa”  </div>
+        <div class="text">-> ”Kirjaudu OmaKelaan” </div>
       </div>
       <div class="image-wrapper">
         <img class="image" src="{% static 'www.png' %}" alt="Example Image">
@@ -77,12 +70,14 @@
     <div class="box step-box">
       <div class="step">2</div>
       <div class="content">
-        <div class="header">VALITSE</div>
+        <div class="header">HAKEMUKSEN VALITSEMINEN</div>
         <div class="text">Valitse vasemmasta reunasta </div>
         <div class="text">”Tee hakemus” </div>
+        <div class="text">->Valitse Opiskelu</div>
+        <div class="text">”Yleinen asumistuki”</div>
       </div>
       <div class="image-wrapper">
-        <img class="image" src="{% static 'allekirjoita.png' %}" alt="Example Image">
+        <img class="image" src="{% static 'lomake.png' %}" alt="Example Image">
       </div>
     </div>
   </div>
@@ -90,12 +85,12 @@
     <div class="box step-box">
       <div class="step">3</div>
       <div class="content">
-        <div class="header">HAKEMUS</div>
-        <div class="text">Valitse Opiskelu  </div>
-        <div class="text"> ”Yleinen asumistuki” </div>
+        <div class="header">TÄYTÄ TIEDOT</div>
+        <div class="text">Täytä tiedot lomakkeeseen </div>
+        <div class="text"> ja lisää tarvittavat liitteet </div>
       </div>
       <div class="image-wrapper">
-        <img class="image" src="{% static 'allekirjoita.png' %}" alt="Example Image">
+        <img class="image" src="{% static 'kirjoitus.png' %}" alt="Example Image">
       </div>
     </div>
   </div>
@@ -103,9 +98,9 @@
     <div class="box step-box">
       <div class="step">4</div>
       <div class="content">
-        <div class="header">TÄYTÄ TIEDOT </div>
-        <div class="text">Täytä tiedot lomakkeeseen</div>
-        <div class="text">ja lisää tarvittavat liitteet </div>
+        <div class="header">TARKISTA JA LÄHETÄ </div>
+        <div class="text">Tarkista lomakkeen tiedot </div>
+        <div class="text">->Paina lähetä </div>
       </div>
       <div class="image-wrapper">
         <img class="image" src="{% static 'allekirjoita.png' %}" alt="Example Image">
@@ -116,41 +111,16 @@
     <div class="box step-box">
       <div class="step">5</div>
       <div class="content">
-        <div class="header">TARKISTA</div>
-        <div class="text">Tarkista lomakkeen tiedot </div>
-      </div>
-      <div class="image-wrapper">
-        <img class="image" src="{% static 'allekirjoita.png' %}" alt="Example Image">
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="box step-box">
-      <div class="step">6</div>
-      <div class="content">
-        <div class="header">LÄHETÄ</div>
-        <div class="text">Paina lähetä </div>
-      </div>
-      <div class="image-wrapper">
-        <img class="image" src="{% static 'allekirjoita.png' %}" alt="Example Image">
-      </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="box step-box">
-      <div class="step">7</div>
-      <div class="content">
-        <div class="header">PÄÄTÖS</div>
+        <div class="header">PÄÄTÖS </div>
         <div class="text">Päätös tulee OmaKelaan</div>
-        <div class="text">sekä postitse</div>
+        <div class="text">sekä postitse </div>
       </div>
       <div class="image-wrapper">
         <img class="image" src="{% static 'allekirjoita.png' %}" alt="Example Image">
       </div>
     </div>
   </div>
-
-
+  <h1>Ajankohtaisen käsittelyajan voi katsoa: https://www.kela.fi/kasittelyajat Tarvittaessa ota yhteyttä Kelaan arkisin 9-16 (asuminen: p. 020 692 210/opiskelu: p. 020 692 209) </h1>
   
 {% endblock %}
 </html>
