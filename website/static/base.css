@@ -15,8 +15,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     margin-top: 50px;
     /* background-color: #f2f2f2; */
@@ -28,15 +28,16 @@
   }
   
   .circle-item {
+    margin: 100px;
     position: absolute;
     transform-origin: center bottom;
   }
   
   .circle-item img {
     display: block;
-    margin: 0 auto;
-    height: 25px; /* Adjust this value to change the image size */
-    width: 80px; /* Adjust this value to change the image size */
+    margin: 50 auto;
+    height: 75px; /* Adjust this value to change the image size */
+    width: 250px; /* Adjust this value to change the image size */
   }
   
   .circle-item-text {
@@ -49,27 +50,27 @@
   }
   
   .circle-item:nth-child(1) {
-    transform: rotate(0deg) translateY(-150px) rotate(0deg);
+    transform: rotate(0deg) translateY(-250px) rotate(0deg);
   }
   
   .circle-item:nth-child(2) {
-    transform: rotate(72deg) translateY(-150px) rotate(-72deg);
+    transform: rotate(72deg) translateY(-250px) rotate(-72deg);
   }
   
   .circle-item:nth-child(3) {
-    transform: rotate(144deg) translateY(-150px) rotate(-144deg);
+    transform: rotate(144deg) translateY(-250px) rotate(-144deg);
   }
   
   .circle-item:nth-child(4) {
-    transform: rotate(216deg) translateY(-150px) rotate(-216deg);
+    transform: rotate(216deg) translateY(-250px) rotate(-216deg);
   }
   
   .circle-item:nth-child(5) {
-    transform: rotate(288deg) translateY(-150px) rotate(-288deg);
+    transform: rotate(288deg) translateY(-250px) rotate(-288deg);
   }
   
   .circle-item:nth-child(6) {
-    transform: rotate(360deg) translateY(-150px) rotate(-360deg);
+    transform: rotate(360deg) translateY(-250px) rotate(-360deg);
   }
 
   /* PALAUTELOMAKE-SIVU */
@@ -96,7 +97,7 @@
 }
 
 .keskita .av-lisatiedot {
-  height: 200px;
+  height: 250px;
 }
 
 .palaute_painike:hover {
@@ -141,7 +142,7 @@
 
 .palaute_textarea {
   width: 100%;
-  height: 300px;
+  height: 250px;
   padding: 12px 20px;
   box-sizing: border-box;
   border: 5px solid #ccc;
@@ -242,7 +243,7 @@
 .button {
   display: inline-block;
   margin: 1vw;
-  width: 200px;
+  width: 250px;
   height: 50px;
   line-height: 50px;
   border: none;
