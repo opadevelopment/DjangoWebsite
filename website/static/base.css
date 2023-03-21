@@ -168,7 +168,7 @@
 
 
 /* opiskelija sivu asumistuki*/
-.container-asumistuki {
+.container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -248,88 +248,6 @@
     margin-right: 40px;
   }
 }
-/* opintuki */
-.container-opintotuki {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-.box {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 20px 0;
-  width: 100%;
-}
-
-.step {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 80px;
-  font-weight: bold;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-}
-
-.header {
-  font-size: 27px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.text {
-  flex: 1;
-  font-size: 17px;
-  margin-bottom: 10px;
-  width: 500px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.image-wrapper {
-  width: 75%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20px;
-}
-
-.image {
-  max-width: 150%;
-  height: auto;
-  border-radius: 10px;
-}
-
-@media (min-width: 768px) {
-  .content {
-    margin-left: 40px;
-    padding: 40px;
-  }
-  
-  .image-wrapper {
-    width: auto;
-    margin-right: 40px;
-  }
-}
-
 .button-container {
   text-align: center;
 }
