@@ -167,7 +167,7 @@
 }
 
 
-/* opiskelija sivu asumistuki*/
+/* opiskelija sivu*/
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -175,6 +175,7 @@
   align-items: center;
   margin: 0 auto;
   max-width: 800px;
+  white-space: nowrap;
 }
 
 .box {
@@ -216,6 +217,7 @@
 }
 
 .text {
+  display: inline-block;
   flex: 1;
   font-size: 17px;
   margin-bottom: 10px;
