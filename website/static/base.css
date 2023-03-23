@@ -174,8 +174,7 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 800px;
-  white-space: nowrap;
+  /* max-width: 500px; */
 }
 
 .box {
@@ -217,7 +216,6 @@
 }
 
 .text {
-  display: inline-block;
   flex: 1;
   font-size: 17px;
   margin-bottom: 10px;
@@ -250,6 +248,7 @@
     margin-right: 40px;
   }
 }
+
 .button-container {
   text-align: center;
 }
