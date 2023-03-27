@@ -4,261 +4,156 @@
 {% block body %}
 <html>
 <body class="info-row">
-    <h1>Muuttoilmoituksen tekeminen</h1>
+    <h1 style="text-align: center;">InfoKorneri</h1>
 
 </body>
 
-<head>
-    <title>info-row</title>
-    <!-- <style>
-        .info-row .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: stretch;
-            margin: 0 auto;
-            max-width: 800px;
-            
-        }
-        .info-row .column {
-            flex: 1;
-            padding: 20px;
-            
-            margin: 10px;
-            text-align: center;
-        }
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 
-        .info-row .row {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
+<div class="button-container">
+  <button class="button" onclick="window.location.href='http://127.0.0.1:8000/';">
+    <span class="button-bg"></span>
+    <span class="button-text">Etusivu</span>
+  <button class="button" onclick="document.querySelector('#container1').scrollIntoView({behavior: 'smooth'});">
+    <span class="button-bg"></span>
+    <span class="button-text">Muuttoilmoitus</span>
+  </button>
+  <button class="button"onclick="document.querySelector('#container2').scrollIntoView({behavior: 'smooth'});">
+    <span class="button-bg"></span>
+    <span class="button-text">Kotivaakutus</span>
+  </button>
+  <button class="button"onclick="document.querySelector('#container2').scrollIntoView({behavior: 'smooth'});">
+    <span class="button-bg"></span>
+    <span class="button-text">Sähkösopimus</span>
+  </button>
+  </button>
+</div>
 
-        .info-row .row img {
-            max-width: 100%;
-            height: auto;
-        }
 
-        .info-row .row p {
-            margin: 0 10px;
-        }
-
-        .info-row .text-row {
-           
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            padding: 20px;
-            text-align: center;
-            margin: 10px;
-        }
-
-        .info-row .text-row img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* New styles added for header */
-        .info-row h1 {
-            text-align: center;
-            margin-top: 0;
-        }
-
-        .info-row .text-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    </style> -->
-    
-</head>
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-
+<div style="margin: 3vw;"></div>
+<div class="otsikko"id="container1">
+    <h1>Muuttoilmoitus</h1>
+  </div>
 
 
   <div class="container">
-    <div class="column" style="background-color: #ffff00;">
-        <div class="text-row" >
-            <h1>Huom!</h1>
-            <div class="row">
-                <div class="first-text-container">
-                    
-                    <p style="font-size: 100px;">!</p>
-                </div>
-                <div class="text-container">
-                    <p style="font-size: 20px;">    KERÄÄ TIEDOT 
-                        ! Tarvitset: pankkitunnukset/varmennekortin tai Postin käyttäjätilin, henkilötunnuksen, lähiosoitteen 	uuteen sekä vanhaan kotiin, Postin palvelun, alkamispäivä (päättymispäivä), 	muuttotyyppi, asumisperuste, sähköposti, puhelinnumero </p>
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
+    <div class="box step-box">
+      <div class="step">!</div>
+      <div class="content">
+        <div class="header">KERÄÄ TIEDOT</div>
+        <div class="text">Tarvitset: pankkitunnukset/varmennekortin tai Postin käyttäjätilin, henkilötunnuksen, lähiosoitteen 	uuteen sekä vanhaan kotiin, Postin palvelun, alkamispäivä (päättymispäivä), 	muuttotyyppi, asumisperuste, sähköposti, puhelinnumero </div>
+        
+        
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'paperipino.png' %}" alt="Example Image">
+      </div>
     </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>POSTI</h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">1</p>
-                </div>
-                <div class="text-container">
-                         <p > Mene osoitteeseen www.posti.fi</p>  
-                        </p>
-                         <p style="font-size: 25px;"> -> Valitse "kirjeet ja postipalvelut" yläreunasta
-                        </p>
-                        <p style="font-size: 25px;">  -> Valitse “Postin jakelu ja osoitteenmuutos” vasen reuna 
-                        </p>
-                        <p style="font-size: 25px;">  -> Valitse “Muuttaminen ja osoitteenmuutos” vasen reuna
-                        </p>
-                        <p style="font-size: 25px;">  -> Valitse “Tee muuttoilmoitus” keskellä (2x)  
-                        </p>
-                       
-                        
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>KIRJAUTUMINEN</h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">2</p>
-                </div>
-                <div class="text-container">
-                    <p style="font-size: 30px;"> Kirjaudu sisään Postiin joko pankkitunnuksilla tai postin käyttäjätilillä   </p>
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>VALITSE</h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">3</p>
-                </div>
-                <div class="text-container">
-                    <p style="font-size: 30px;">Valitse vasemmasta reunasta “Muuttoilmoitus” </p>
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>KENELLE </h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">4</p>
-                </div>
-                <div class="text-container">
-                    <p > Valitse kenelle haluat tehdä osoitteenmuutoksen: </p>  
-                   </p>
-                    <p style="font-size: 30px;"> Vain Postille, Vain Digi- ja väestötietovirastolle vai molemmille Postille sekä Digi- ja 	väestötietovirastolle 
-                   </p>
-                   <p style="font-size: 30px;">  Voit myös tehdä muuttoilmoituksen toisen puolesta   
-                   </p>
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>TÄYTÄ TIEDOT </h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">5</p>
-                </div>
-                <div class="text-container">
-                    <p style="font-size: 30px;">Täytä tiedot lomakkeeseen, jotka olit kerännyt aikaisemmin
-                    </p>
-                    <p style="font-size: 30px;">(Tarvittavien tietojen määrä saattaa vaihdella riippuen kenelle haluat tehdä 	osoitteenmuutoksen) 
-                    </p>
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>TARKISTA </h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">6</p>
-                </div>
-                <div class="text-container">
-                    <p style="font-size: 30px;">Tarkista lomakkeen tiedot </p>
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>LÄHETÄ </h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">7</p>
-                </div>
-                <div class="text-container">
-                    <p style="font-size: 30px;">Paina lähetä  
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>MAKSU </h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">8</p>
-                </div>
-                <div class="text-container">
-                    <p style="font-size: 30px;">Riippuen valinnoistasi suorita maksu esimerkiksi verkkopankissasi  </p>
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
-    </div>
-</div>
-    <div class="container">
-    <div class="column">
-        <div class="text-row">
-            <h1>PÄÄTÖS </h1>
-            <div class="row">
-                <div class="first-text-container">
-                    <p style="font-size: 100px;">9</p>
-                </div>
-                <div class="text-container">
-                    <p style="font-size: 30px;">Osoitteenmuutos tulee voimaan valitsemastasi alkamispäivästä alkaen  </p>
-                </div>
-                <img src="{% static 'logo2.png' %}" class="responsive-image">
-            </div>
-        </div>
-    </div>
+  </div>
 
-    
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">1</div>
+      <div class="content">
+        <div class="header">POSTI</div>
+        <div class="text">
+            -> Valitse “Kirjeet ja postipalvelut” yläreunasta </div>
+        <div class="text">-> Valitse “Postin jakelu ja osoitteenmuutos” vasen reuna  </div>
+        <div class="text">-> Valitse “Muuttaminen ja osoitteenmuutos” vasen reuna </div>
+        <div class="text">-> Valitse “Tee muuttoilmoitus”</div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'www.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">2</div>
+      <div class="content">
+        <div class="header">KIRJAUTUMINEN </div>
+        <div class="text">Valitse vasemmasta reunasta </div>
+        <div class="text">”Tee hakemus” </div>
+        <div class="text">->Valitse Opiskelu</div>
+        <div class="text">->”Opintotuki”</div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'näppäimistö.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">3</div>
+      <div class="content">
+        <div class="header">VALITSE</div>
+        <div class="text">Valitse vasemmasta reunasta “Muuttoilmoitus” </div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'klikkaa.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">4</div>
+      <div class="content">
+        <div class="header">KENELLE</div>
+        <div class="text">Valitse kenelle haluat tehdä osoitteenmuutoksen:</div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'etsi.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">5</div>
+      <div class="content">
+        <div class="header">TÄYTÄ TIEDOT</div>
+        <div class="text">Täytä tiedot lomakkeeseen, jotka olit kerännyt aikaisemmin</div>
+        <div class="text">(Tarvittavien tietojen määrä saattaa vaihdella riippuen kenelle haluat tehdä 	osoitteenmuutoksen) </div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'lomake.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">6</div>
+      <div class="content">
+        <div class="header">TARKISTA JA LÄHETÄ</div>
+        <div class="text">Tarkista lomakkeen tiedot ja paina lähetä </div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'sopimus.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">7</div>
+      <div class="content">
+        <div class="header">MAKSU</div>
+        <div class="text">Riippuen valinnoistasi suorita maksu esimerkiksi verkkopankissasi </div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'kolikot.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">8</div>
+      <div class="content">
+        <div class="header">PÄÄTÖS</div>
+        <div class="text">Osoitteenmuutos tulee voimaan valitsemastasi alkamispäivästä alkaen </div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'päätös.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
 {% endblock %}
 </html>
