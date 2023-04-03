@@ -3,12 +3,12 @@
 {% extends "base.html" %}
 {% block body %}
 {% load static %}
-
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 <head>
     <title> Yhteydenotto </title>
 </head>
 <body>
-    <div class="keskita">
+    <div class="container">
         <form method="post">
             {% if submitted %}
             <h1 class="kiitos">Kiitos palautteesta!</h1>
