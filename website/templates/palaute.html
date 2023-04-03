@@ -3,12 +3,13 @@
 {% extends "base.html" %}
 {% block body %}
 {% load static %}
-
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 <head>
     <title> Yhteydenotto </title>
 </head>
-<body>
-    <div class="keskita">
+<body class="info-row">
+    <!-- <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Kiitos palautteesta!</h1> -->
+     <div class="keskita">
         <form method="post">
             {% if submitted %}
             <h1 class="kiitos">Kiitos palautteesta!</h1>
@@ -31,7 +32,10 @@
             </form>
             {% endif %}
     </div>
+
 </body>
+   
+
 {% endblock %}
 
 </html>
