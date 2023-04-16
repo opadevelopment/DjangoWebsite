@@ -2,84 +2,136 @@
 {% extends "base.html" %}
 {% block body %}
 {% load static %}
-
 <html>
-<head>
-    <title> Työasia sivu</title>
-</head>
 <body class="info-row">
-    <h1>Tämä on työasiasivu</h1>
-    <div class="container">
-        <img src="{% static 'kesken.png' %}"
-        width="500"
-        height="600" />
-
-        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-
-
-
-        <!-- <div class="container">
-          <div class="column">
-              <div class="text-row">
-                  <h1>Huom!</h1>
-                  <div class="row" style="background-color: #ffff00;">
-                      <div class="first-text-container">
-                          
-                          <p style="font-size: 100px;">!</p>
-                      </div>
-                      <div class="text-container">
-                          <p style="font-size: 20px;">    KERÄÄ TIEDOT 
-                              ! Tarvitset: pankkitunnukset, vuokrasopimus (liitteeksi hakemukseen), tilinumero, pankin BIC-	koodi, asumismenot (vuokra, vesimaksu, lämmityskustannukset), tiedot kaikista tuloista </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <h1>Kun kyseessä on Opintotuki</h1>
-      <div class="container">
-          <div class="column">
-              <div class="text-row">
-                  <h1>OMAKELA</h1>
-                  <div class="row">
-                      <div class="first-text-container">
-                          <p style="font-size: 100px;">1</p>
-                      </div>
-                      <div class="text-container">
-                              <p>Kirjaudu www.kela.fi</p>
-                              <p>pankkitunnuksilla:</p>
-                              <p>-> Oikea yläkulma</p>
-                              <p>-> ”Asioi verkossa”</p>
-                              <p>-> ”Kirjaudu OmaKelaan”</p>
-                              
-                      </div>
-                      <img src="{% static 'logo2.png' %}" class="responsive-image">
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="container">
-          <div class="column">
-              <div class="text-row">
-                  <h1>VALITSE</h1>
-                  <div class="row">
-                      <div class="first-text-container">
-                          <p style="font-size: 100px;">2</p>
-                      </div>
-                      <div class="text-container">
-                              <p>Valitse vasemmasta reunasta </p>
-                              <p>”Tee hakemus”</p>
-                              
-                      </div>
-                      <img src="{% static 'logo2.png' %}" class="responsive-image">
-                  </div>
-              </div>
-          </div>
-      </div> -->
-        
-    
-        
-    </div>
+    <h1 style="text-align: center;">InfoKorneri</h1>
 
 </body>
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+<div class="button-container">
+  <button class="button" onclick="window.location.href='http://127.0.0.1:8000/';">
+    <span class="button-bg"></span>
+    <span class="button-text">Etusivu</span>
+  <button class="button" onclick="document.querySelector('#container1').scrollIntoView({behavior: 'smooth'});">
+    <span class="button-bg"></span>
+    <span class="button-text">Työsasia</span>
+  </button>
+  </button>
+</div>
+
+
+<div style="margin: 3vw;"></div>
+<div class="otsikko"id="container1">
+    <h1>Työsasia</h1>
+  </div>
+
+
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">!</div>
+      <div class="content">
+        <div class="header">YLEISTÄ </div>
+        <div class="text">Työsopimus on työntekijän ja työnantajan välinen sopimus, joka solmitaan ennen työsuhteen alkua. Työsopimuksen tarkoitus on sopia ja määritellä ehdot sille, miten työntekijä tulee työnantajan palvelukseen. Työsopimus on vapaamuotoinen sopimus, joka voi olla suullinen tai kirjallinen.</div>
+        <div class="text">Työsopimusta tehdessä. Kannattaa lukea työsopimus tarkasti ja harkitusti sekä kiinnittää huomiota seuraaviin asioihin, että ne löytyvät sopimuksesta: </div>
+
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'huom.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">1</div>
+      <div class="content">
+        <div class="header">TYÖSOPIMUKSEN OSAPUOLET</div>
+
+        <div class="text"> Työnantaja/yritys: </div>
+        <div class="text">Nimi, henkilötunnus/Y-tunnus, liike- tai kotipaikka.</div>
+        <div class="text">Työntekijä: </div>
+        <div class="text">Nimi, henkilötunnus, osoite, pankki ja tilinumero </div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'henkkari.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">2</div>
+      <div class="content">
+        <div class="header">TYÖSUHTEEN VOIMASSAOLO</div>
+
+        <div class="text">Työsopimuksen voimassaolo eli työsuhteen alkamispäivä sekä loppumispäivä (jos päättymispäivä tiedossa). </div>
+        <div class="text">Työsopimuksen tyyppi eli onko sopimus toistaiseksi voimassa oleva vai määräaikainen.</div>
+        <div class="text">Kiinnitä huomiota, että määräaikaisuus on perusteltu sekä työsuhteen kesto on arvioitu sopimuksessa. </div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'kalenteri.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">3</div>
+      <div class="content">
+        <div class="header">TYÖTEHTÄVÄT</div>
+
+        <div class="text">Tarkista, että työntekijän työtehtävät ovat määritelty sekä mahdolliset poikkeukset.</div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'puhe.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">4</div>
+      <div class="content">
+        <div class="header">TYÖSUHTEEN EHDOT</div>
+
+        <div class="text">Tämä on sopimuksen tärkein kohta. Tässä osiossa määritellään kaikki mahdolliset ehdot työsuhteelle: </div>
+        <div class="text">- palkka ja palkanmaksukausi</div>
+        <div class="text">- työaika</div>
+        <div class="text">- vuosiloma </div>
+        <div class="text">- irtisanomisaika </div>
+        <div class="text">- mahdollisiin ylityöhön liittyviä asioita </div>
+        <div class="text">- lainsäädännöllisesti alaa koskevat työehtosopimukset (TES) </div>
+        <div class="text">- muita työstä riippuen tarvittavia ehtoja sekä määrityksiä asioille </div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'lakipaperi.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">5</div>
+      <div class="content">
+        <div class="header">ALLEKIRJOITUKSET </div>
+
+        <div class="text">Molempien osapuolien työnantajan ja työntekijän allekirjoitus sekä työsopimuksen solmimisen aika ja paikka. </div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'allekirjoita.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="box step-box">
+      <div class="step">6</div>
+      <div class="content">
+        <div class="header">TARKISTA </div>
+
+        <div class="text">Ennen työsopimuksen hyväksymistä. Tarkista ja lue työsopimus tiedot läpi. Tarkista, että se on oikeanlainen juuri sinulle.</div>
+      </div>
+      <div class="image-wrapper">
+        <img class="image" src="{% static 'sopimus.png' %}" alt="Example Image">
+      </div>
+    </div>
+  </div>
+
 {% endblock %}
 </html>
