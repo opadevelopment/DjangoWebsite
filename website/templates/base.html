@@ -9,24 +9,26 @@
     <header>
         <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
         <title>InfoKorneri</title>
+        <div class = "left-column"></div>
         <div class="column">
         <nav class="navigointi">
-            <!-- <a href="{% url 'hello' %}"> <img class="logo" src="{% static 'päivitettylogotxtkeskellä.png' %}" height="100px" width="100px" alt="InfoKorneri"> </a> -->
+            
             <div class="menuburger">
                 <p onclick="menu()" style="font-size: xxx-large;" >&#9776;</p>
             </div>
             <ul id="menu" class = "mobile-nav-links" style ="display: none; width: 100%; flex-direction: column;">
-                <!-- <a href="http://127.0.0.1:8000/testi/">Clickaa tästä testisivulle</a> | -->
+                
                 <a href="http://127.0.0.1:8000/">Etusivu</a> |
                 <a href="http://127.0.0.1:8000/opiskelija/">Opiskelija</a> |
                 <a href="http://127.0.0.1:8000/muutto/">Muutto</a> |
-                <a href="http://127.0.0.1:8000/tyoasia/">Työasia</a> |
+                <a href="http://127.0.0.1:8000/tyoasia/">Työsuhde</a> |
                 <a href="http://127.0.0.1:8000/talous/">Talous</a> |
                 <a href="http://127.0.0.1:8000/palaute/">Palaute</a> |
-                <a href="http://127.0.0.1:8000/admin/">Admin</a> |
+                <!-- <a href="http://127.0.0.1:8000/admin/">Admin</a> | -->
             </ul>
         </nav>
         </div>
+        <div class="right-column"></div>
     </header>
     <script type="text/javascript">
 
