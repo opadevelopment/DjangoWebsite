@@ -3,12 +3,20 @@
 {% block body %}
 {% load static %}
 <html>
-<body class="info-row">
-    <h1 style="text-align: center;">InfoKorneri</h1>
 
-</body>
+<head>
+    <title> Työsuhdesivu</title>
+</head>
+<body class="info-row">
+    <h1>Tämä on työsuhdesivu</h1>
+    <div class="container">
+        <img src="{% static 'kesken.png' %}"
+        width="500"
+        height="600" />
+
 
 <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
 
 <div class="button-container">
   <button class="button" onclick="window.location.href='http://127.0.0.1:8000/';">

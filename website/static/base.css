@@ -213,6 +213,7 @@
   font-weight: bold;
   margin-bottom: 10px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
 }
 
 .text {
@@ -374,3 +375,19 @@ body{
  padding: 10px;
 }
 
+/* .left-column,
+.right-column {
+  background-color: rgb(252,244,144);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 17vw;
+}
+
+.left-column{
+  left: 0;
+}
+
+.right-column {
+  right: 0;
+} */
