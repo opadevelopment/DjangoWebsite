@@ -7,12 +7,37 @@
 <head>
     <title> Talous sivu</title>
 </head>
+
+
 <body class="info-row">
-  <h1 style="text-align: center;">InfoKorneri</h1>
-    <div class="otsikko" id="container1">
-      <h1>Kilpailuttaminen</h1>
-    </div>
+  <h1>InfoKorneri</h1>
+  <!-- <div class="container">
+      <img src="{% static 'kesken.png' %}"
+      width="500"
+      height="600" /> -->
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+
+<div class="button-container">
+<button class="button" onclick="window.location.href='http://127.0.0.1:8000/';">
+  <span class="button-bg"></span>
+  <span class="button-text">Etusivu</span>
+<button class="button" onclick="document.querySelector('#container1').scrollIntoView({behavior: 'smooth'});">
+  <span class="button-bg"></span>
+  <span class="button-text">Työsopimus</span>
+</button>
+</button>
+</div>
+
+
+<div style="margin: 3vw;"></div>
+<div class="otsikko"id="container1">
+  <h1>Työsopimus</h1>
+</div>
    
+
     <div class="container">
        <div class="div1">
         <div class="box step-box">
